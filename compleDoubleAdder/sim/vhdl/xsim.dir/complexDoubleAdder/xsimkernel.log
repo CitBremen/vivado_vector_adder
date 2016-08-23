@@ -1,7 +1,0 @@
-Running: xsim.dir/complexDoubleAdder/xsimk.exe -maxdeltaid 10000 -simmode gui -wdb complexDoubleAdder.wdb -simrunnum 0 -socket 51316
-Design successfully loaded
-Design Loading Memory Usage: 20984 KB (Peak: 20984 KB)
-Design Loading CPU Usage: 124 ms
-Simulation completed
-Simulation Memory Usage: 21644 KB (Peak: 21644 KB)
-Simulation CPU Usage: 218 ms
