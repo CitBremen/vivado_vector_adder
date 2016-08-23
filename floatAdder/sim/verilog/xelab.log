@@ -1,0 +1,27 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_floatAdder_top -prj floatAdder.prj --lib ieee_proposed=./ieee_proposed -s floatAdder 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/sim/verilog/AESL_axi_slave_AXILiteS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_AXILiteS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/sim/verilog/floatAdder.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_floatAdder_top
+INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/sim/verilog/floatAdder.autotb.v:151]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/sim/verilog/floatAdder.autotb.v:152]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n_n, assumed default net type wire [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/sim/verilog/floatAdder.autotb.v:158]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/sim/verilog/floatAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module floatAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/sim/verilog/floatAdder_AXILiteS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module floatAdder_AXILiteS_s_axi
+INFO: [VRFC 10-311] analyzing module floatAdder_AXILiteS_s_axi_ram
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.floatAdder_AXILiteS_s_axi_ram(DE...
+Compiling module xil_defaultlib.floatAdder_AXILiteS_s_axi(C_S_AX...
+Compiling module xil_defaultlib.floatAdder_default
+Compiling module xil_defaultlib.AESL_axi_slave_AXILiteS
+Compiling module xil_defaultlib.apatb_floatAdder_top
+Built simulation snapshot floatAdder

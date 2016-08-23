@@ -1,0 +1,9 @@
+   Compiling ../../../adder_tc.cpp in debug mode
+../../../adder_tc.cpp: In function 'int softwareAdder(data_t*, data_t (*)[5], data_t*)':
+../../../adder_tc.cpp:43:40: error: invalid use of incomplete type 'struct std::complex<ap_fixed<18, 3> >'
+c:\xilinx\vivado_hls\2015.4\msys\bin\../lib/gcc/mingw32/4.6.2/include/c++/complex:124:12: error: declaration of 'struct std::complex<ap_fixed<18, 3> >'
+../../../adder_tc.cpp:45:30: error: invalid use of incomplete type 'struct std::complex<ap_fixed<18, 3> >'
+c:\xilinx\vivado_hls\2015.4\msys\bin\../lib/gcc/mingw32/4.6.2/include/c++/complex:124:12: error: declaration of 'struct std::complex<ap_fixed<18, 3> >'
+../../../adder_tc.cpp:69: confused by earlier errors, bailing out
+make: *** [obj/adder_tc.o] Error 1
+@E [SIM-1] 'csim_design' failed: compilation error(s).

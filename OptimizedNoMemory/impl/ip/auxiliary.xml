@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="TopAdder" xd:componentRef="TopAdder" xd:initiationInterval="21" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:returnValue xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:statusOffset="0x14" xd:dataWidth="32"/>
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="output[].real()" xd:originalName="output" xd:direction="out" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x20" xd:arraySize="3" xd:dataWidth="32"/>
+  <xd:arg xd:name="output[].imag()" xd:originalName="output" xd:direction="out" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x30" xd:arraySize="3" xd:dataWidth="32"/>
+  <xd:arg xd:name="input1[0][].real()" xd:originalName="input10" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x40" xd:arraySize="5" xd:dataWidth="32"/>
+  <xd:arg xd:name="input1[1][].real()" xd:originalName="input11" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x60" xd:arraySize="5" xd:dataWidth="32"/>
+  <xd:arg xd:name="input1[2][].real()" xd:originalName="input12" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x80" xd:arraySize="5" xd:dataWidth="32"/>
+  <xd:arg xd:name="input1[0][].imag()" xd:originalName="input10" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0xA0" xd:arraySize="5" xd:dataWidth="32"/>
+  <xd:arg xd:name="input1[1][].imag()" xd:originalName="input11" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0xC0" xd:arraySize="5" xd:dataWidth="32"/>
+  <xd:arg xd:name="input1[2][].imag()" xd:originalName="input12" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0xE0" xd:arraySize="5" xd:dataWidth="32"/>
+  <xd:arg xd:name="input2[].real()" xd:originalName="input2" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x100" xd:arraySize="3" xd:dataWidth="32"/>
+  <xd:arg xd:name="input2[].imag()" xd:originalName="input2" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x110" xd:arraySize="3" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="20" xd:worst-case="20" xd:average-case="20"/>
+  <xd:resourceEstimates xd:LUT="1353" xd:FF="1254" xd:BRAM="20" xd:DSP="2"/>
+</xd:acceleratorMap>

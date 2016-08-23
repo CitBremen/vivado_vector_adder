@@ -1,0 +1,162 @@
+ B real [0][0]1
+ B Img [0][0]-1
+ B real [0][1]1.5
+ B Img [0][1]-1.5
+ B real [0][2]2
+ B Img [0][2]-2.5
+ B real [1][0]2
+ B Img [1][0]-2
+ B real [1][1]2.5
+ B Img [1][1]-2.5
+ B real [1][2]3
+ B Img [1][2]-3.5
+ B real [2][0]3
+ B Img [2][0]-3
+ B real [2][1]3.5
+ B Img [2][1]-3.5
+ B real [2][2]4
+ B Img [2][2]-4.5
+ B real [3][0]4
+ B Img [3][0]-4
+ B real [3][1]4.5
+ B Img [3][1]-4.5
+ B real [3][2]4
+ B Img [3][2]-4.5
+ B real [4][0]5
+ B Img [4][0]-5
+ B real [4][1]5.5
+ B Img [4][1]-5.5
+ B real [4][2]5
+ B Img [4][2]-5.5
+ C real :1.1
+ C Img :3.3
+ C real :2
+ C Img :2
+ C real :3.1
+ C Img :7.4
+ C real :3.1
+ C Img :7.4
+ C real :3.1
+ C Img :7.4
+
+(3.1,0.8)
+(5,-1.5)
+(7.1,2.9)
+(7.1,2.9)
+(8.1,1.9)
+
+C:\Users\engrm_000\OneDrive\vivado_HLS\complexAdder\complex2DAdder\sim\vhdl>call xelab xil_defaultlib.apatb_complex2DAdder_top -prj complex2DAdder.prj --lib "ieee_proposed=./ieee_proposed" -s complex2DAdder  
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_complex2DAdder_top -prj complex2DAdder.prj --lib ieee_proposed=./ieee_proposed -s complex2DAdder 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/AESL_axi_slave_AXILiteS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AESL_axi_slave_AXILiteS
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/AESL_axi_s_out_M_imag_V.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AESL_axi_s_out_M_imag_V
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/AESL_axi_s_out_M_real_V.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AESL_axi_s_out_M_real_V
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/complex2DAdder.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity apatb_complex2DAdder_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/complex2DAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity complex2DAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/complex2DAdder_AXILiteS_s_axi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity complex2DAdder_AXILiteS_s_axi
+INFO: [VRFC 10-307] analyzing entity complex2DAdder_AXILiteS_s_axi_ram
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behave of entity xil_defaultlib.complex2DAdder_AXILiteS_s_axi_ram [\complex2DAdder_AXILiteS_s_axi_r...]
+Compiling architecture behave of entity xil_defaultlib.complex2DAdder_AXILiteS_s_axi_ram [\complex2DAdder_AXILiteS_s_axi_r...]
+Compiling architecture behave of entity xil_defaultlib.complex2DAdder_AXILiteS_s_axi [\complex2DAdder_AXILiteS_s_axi(9...]
+Compiling architecture behav of entity xil_defaultlib.complex2DAdder [\complex2DAdder(9,32)\]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_out_M_real_V [\AESL_axi_s_out_M_real_V("../tv/...]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_out_M_imag_V [\AESL_axi_s_out_M_imag_V("../tv/...]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_slave_AXILiteS [\AESL_axi_slave_AXILiteS("../tv/...]
+Compiling architecture behav of entity xil_defaultlib.apatb_complex2dadder_top
+Built simulation snapshot complex2DAdder
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/xsim.dir/complex2DAdder/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 48.629 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 09 23:37:58 2016...
+
+****** xsim v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/complex2DAdder/xsim_script.tcl
+# xsim {complex2DAdder} -maxdeltaid 10000 -autoloadwcfg -tclbatch {complex2DAdder.tcl}
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source complex2DAdder.tcl
+## run all
+Note: simulation done!
+Time: 4855 ns  Iteration: 1  Process: /apatb_complex2DAdder_top/generate_sim_done_proc  File: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/complex2DAdder.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 4855 ns  Iteration: 1  Process: /apatb_complex2DAdder_top/generate_sim_done_proc  File: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/complex2DAdder.autotb.vhd
+$finish called at time : 4855 ns
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Jun 09 23:38:12 2016...
+ B real [0][0]1
+ B Img [0][0]-1
+ B real [0][1]1.5
+ B Img [0][1]-1.5
+ B real [0][2]2
+ B Img [0][2]-2.5
+ B real [1][0]2
+ B Img [1][0]-2
+ B real [1][1]2.5
+ B Img [1][1]-2.5
+ B real [1][2]3
+ B Img [1][2]-3.5
+ B real [2][0]3
+ B Img [2][0]-3
+ B real [2][1]3.5
+ B Img [2][1]-3.5
+ B real [2][2]4
+ B Img [2][2]-4.5
+ B real [3][0]4
+ B Img [3][0]-4
+ B real [3][1]4.5
+ B Img [3][1]-4.5
+ B real [3][2]4
+ B Img [3][2]-4.5
+ B real [4][0]5
+ B Img [4][0]-5
+ B real [4][1]5.5
+ B Img [4][1]-5.5
+ B real [4][2]5
+ B Img [4][2]-5.5
+ C real :1.1
+ C Img :3.3
+ C real :2
+ C Img :2
+ C real :3.1
+ C Img :7.4
+ C real :3.1
+ C Img :7.4
+ C real :3.1
+ C Img :7.4
+
+(3.1,0.8)
+(5,-1.5)
+(7.1,2.9)
+(7.1,2.9)
+(8.1,1.9)

@@ -1,0 +1,7 @@
+Running: xsim.dir/complex2DAdder/xsimk.exe -maxdeltaid 10000 -simmode gui -wdb complex2DAdder.wdb -simrunnum 0 -socket 54769
+Design successfully loaded
+Design Loading Memory Usage: 18048 KB (Peak: 18048 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 18616 KB (Peak: 18616 KB)
+Simulation CPU Usage: 77 ms

@@ -1,0 +1,1 @@
+"xil_defaultlib.apatb_complex2DAdder_top" -prj "complex2DAdder.prj" --lib "ieee_proposed=./ieee_proposed" -s "complex2DAdder" 

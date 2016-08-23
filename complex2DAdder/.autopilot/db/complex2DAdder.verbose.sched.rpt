@@ -1,0 +1,267 @@
+
+
+================================================================
+== Vivado HLS Report for 'complex2DAdder'
+================================================================
+* Date:           Thu Jun 09 23:33:13 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        complexAdder
+* Solution:       complex2DAdder
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      5.01|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    7|    7|    8|    8|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |             |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- outerloop  |    5|    5|         2|          1|          1|     5|    yes   |
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	4  / (exitcond1)
+	3  / (!exitcond1)
+3 --> 
+	2  / true
+4 --> 
+* FSM state operations: 
+
+ <State 1>: 1.57ns
+ST_1: stg_5 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap([5 x i32]* %in1_M_real_V), !map !7
+
+ST_1: stg_6 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap([5 x i32]* %in1_M_imag_V), !map !13
+
+ST_1: stg_7 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap([15 x i32]* %in2_M_real_V), !map !17
+
+ST_1: stg_8 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap([15 x i32]* %in2_M_imag_V), !map !23
+
+ST_1: stg_9 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i32* %out_M_real_V), !map !27
+
+ST_1: stg_10 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i32* %out_M_imag_V), !map !31
+
+ST_1: stg_11 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecBitsMap(i32 0) nounwind, !map !35
+
+ST_1: stg_12 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecTopModule([15 x i8]* @complex2DAdder_str) nounwind
+
+ST_1: stg_13 [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: empty [1/1] 0.00ns
+:9  %empty = call i32 (...)* @_ssdm_op_SpecMemCore([5 x i32]* %in1_M_real_V, [1 x i8]* @p_str, [7 x i8]* @RAM_1P_str, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: empty_2 [1/1] 0.00ns
+:10  %empty_2 = call i32 (...)* @_ssdm_op_SpecMemCore([5 x i32]* %in1_M_imag_V, [1 x i8]* @p_str, [7 x i8]* @RAM_1P_str, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: stg_16 [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecInterface([5 x i32]* %in1_M_real_V, [5 x i32]* %in1_M_imag_V, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: empty_3 [1/1] 0.00ns
+:12  %empty_3 = call i32 (...)* @_ssdm_op_SpecMemCore([15 x i32]* %in2_M_real_V, [1 x i8]* @p_str, [7 x i8]* @RAM_1P_str, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: empty_4 [1/1] 0.00ns
+:13  %empty_4 = call i32 (...)* @_ssdm_op_SpecMemCore([15 x i32]* %in2_M_imag_V, [1 x i8]* @p_str, [7 x i8]* @RAM_1P_str, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: stg_19 [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecInterface([15 x i32]* %in2_M_real_V, [15 x i32]* %in2_M_imag_V, [10 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_1: stg_20 [1/1] 0.00ns
+:15  call void (...)* @_ssdm_op_SpecInterface(i32* %out_M_real_V, i32* %out_M_imag_V, [5 x i8]* @p_str5, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_1: stg_21 [1/1] 1.57ns
+:16  br label %1
+
+
+ <State 2>: 5.01ns
+ST_2: index [1/1] 0.00ns
+:0  %index = phi i3 [ 0, %0 ], [ %index_1, %2 ]
+
+ST_2: exitcond1 [1/1] 1.62ns
+:1  %exitcond1 = icmp eq i3 %index, -3
+
+ST_2: index_1 [1/1] 0.80ns
+:2  %index_1 = add i3 %index, 1
+
+ST_2: stg_25 [1/1] 0.00ns
+:3  br i1 %exitcond1, label %3, label %2
+
+ST_2: tmp [1/1] 0.00ns
+:4  %tmp = zext i3 %index to i64
+
+ST_2: tmp_cast [1/1] 0.00ns
+:5  %tmp_cast = zext i3 %index to i5
+
+ST_2: tmp_2 [1/1] 0.00ns
+:6  %tmp_2 = call i5 @_ssdm_op_BitConcatenate.i5.i3.i2(i3 %index, i2 0)
+
+ST_2: tmp_3 [1/1] 1.31ns
+:7  %tmp_3 = sub i5 %tmp_2, %tmp_cast
+
+ST_2: tmp_4 [1/1] 1.31ns
+:8  %tmp_4 = add i5 %tmp_3, 2
+
+ST_2: tmp_4_cast [1/1] 0.00ns
+:9  %tmp_4_cast = sext i5 %tmp_4 to i64
+
+ST_2: in2_M_real_V_addr [1/1] 0.00ns
+:10  %in2_M_real_V_addr = getelementptr [15 x i32]* %in2_M_real_V, i64 0, i64 %tmp_4_cast
+
+ST_2: in2_M_imag_V_addr [1/1] 0.00ns
+:11  %in2_M_imag_V_addr = getelementptr [15 x i32]* %in2_M_imag_V, i64 0, i64 %tmp_4_cast
+
+ST_2: in1_M_real_V_addr [1/1] 0.00ns
+:12  %in1_M_real_V_addr = getelementptr [5 x i32]* %in1_M_real_V, i64 0, i64 %tmp
+
+ST_2: in1_M_imag_V_addr [1/1] 0.00ns
+:13  %in1_M_imag_V_addr = getelementptr [5 x i32]* %in1_M_imag_V, i64 0, i64 %tmp
+
+ST_2: p_Val2_s [2/2] 2.39ns
+:14  %p_Val2_s = load i32* %in1_M_real_V_addr, align 4
+
+ST_2: p_Val2_1 [2/2] 2.39ns
+:15  %p_Val2_1 = load i32* %in1_M_imag_V_addr, align 4
+
+ST_2: p_Val2_2 [2/2] 2.39ns
+:16  %p_Val2_2 = load i32* %in2_M_real_V_addr, align 4
+
+ST_2: p_Val2_3 [2/2] 2.39ns
+:17  %p_Val2_3 = load i32* %in2_M_imag_V_addr, align 4
+
+
+ <State 3>: 4.83ns
+ST_3: empty_5 [1/1] 0.00ns
+:0  %empty_5 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 5, i64 5, i64 5)
+
+ST_3: stg_41 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecLoopName([10 x i8]* @p_str3) nounwind
+
+ST_3: tmp_1 [1/1] 0.00ns
+:2  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str3)
+
+ST_3: stg_43 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_3: p_Val2_s [1/2] 2.39ns
+:14  %p_Val2_s = load i32* %in1_M_real_V_addr, align 4
+
+ST_3: p_Val2_1 [1/2] 2.39ns
+:15  %p_Val2_1 = load i32* %in1_M_imag_V_addr, align 4
+
+ST_3: p_Val2_2 [1/2] 2.39ns
+:16  %p_Val2_2 = load i32* %in2_M_real_V_addr, align 4
+
+ST_3: p_Val2_3 [1/2] 2.39ns
+:17  %p_Val2_3 = load i32* %in2_M_imag_V_addr, align 4
+
+ST_3: p_r_M_real_V [1/1] 2.44ns
+:18  %p_r_M_real_V = add i32 %p_Val2_s, %p_Val2_2
+
+ST_3: p_r_M_imag_V [1/1] 2.44ns
+:19  %p_r_M_imag_V = add i32 %p_Val2_1, %p_Val2_3
+
+ST_3: stg_50 [1/1] 0.00ns
+:20  call void @_ssdm_op_Write.axis.volatile.i32P(i32* %out_M_real_V, i32 %p_r_M_real_V)
+
+ST_3: stg_51 [1/1] 0.00ns
+:21  call void @_ssdm_op_Write.axis.volatile.i32P(i32* %out_M_imag_V, i32 %p_r_M_imag_V)
+
+ST_3: empty_6 [1/1] 0.00ns
+:22  %empty_6 = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str3, i32 %tmp_1)
+
+ST_3: stg_53 [1/1] 0.00ns
+:23  br label %1
+
+
+ <State 4>: 0.00ns
+ST_4: stg_54 [1/1] 0.00ns
+:0  ret i32 0
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

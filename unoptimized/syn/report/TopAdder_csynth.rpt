@@ -1,0 +1,172 @@
+
+
+================================================================
+== Vivado HLS Report for 'TopAdder'
+================================================================
+* Date:           Fri May 20 13:00:28 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        complexAdder
+* Solution:       unoptimized
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.23|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  127|  127|  128|  128|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |             |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1     |  126|  126|        42|          -|          -|     3|    no    |
+        | + Loop 1.1  |   40|   40|         8|          -|          -|     5|    no    |
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     18|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |       24|      6|    1438|   2822|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      9|
+|Register         |        -|      -|     417|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |       24|      6|    1855|   2849|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        8|      2|       1|      5|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------+---------------------------------------+---------+-------+-----+------+
+    |                 Instance                 |                 Module                | BRAM_18K| DSP48E|  FF |  LUT |
+    +------------------------------------------+---------------------------------------+---------+-------+-----+------+
+    |TopAdder_AXILiteS_s_axi_U                 |TopAdder_AXILiteS_s_axi                |       24|      0|  548|   524|
+    |TopAdder_dadd_64ns_64ns_64_5_full_dsp_U0  |TopAdder_dadd_64ns_64ns_64_5_full_dsp  |        0|      3|  445|  1149|
+    |TopAdder_dadd_64ns_64ns_64_5_full_dsp_U1  |TopAdder_dadd_64ns_64ns_64_5_full_dsp  |        0|      3|  445|  1149|
+    +------------------------------------------+---------------------------------------+---------+-------+-----+------+
+    |Total                                     |                                       |       24|      6| 1438|  2822|
+    +------------------------------------------+---------------------------------------+---------+-------+-----+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |depth_1_fu_212_p2    |     +    |      0|  0|   3|           3|           1|
+    |index_1_fu_170_p2    |     +    |      0|  0|   2|           2|           1|
+    |tmp_2_fu_200_p2      |     +    |      0|  0|   5|           5|           5|
+    |tmp_4_fu_222_p2      |     +    |      0|  0|   5|           5|           5|
+    |exitcond1_fu_164_p2  |   icmp   |      0|  0|   1|           2|           2|
+    |exitcond_fu_206_p2   |   icmp   |      0|  0|   2|           3|           3|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |Total                |          |      0|  0|  18|          20|          17|
+    +---------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------+----+-----------+-----+-----------+
+    |      Name     | LUT| Input Size| Bits| Total Bits|
+    +---------------+----+-----------+-----+-----------+
+    |ap_NS_fsm      |   4|         11|    1|         11|
+    |depth_reg_145  |   3|          2|    3|          6|
+    |index_reg_134  |   2|          2|    2|          4|
+    +---------------+----+-----------+-----+-----------+
+    |Total          |   9|         15|    6|         21|
+    +---------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+----+----+-----+-----------+
+    |            Name            | FF | LUT| Bits| Const Bits|
+    +----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                   |  10|   0|   10|          0|
+    |depth_1_reg_269             |   3|   0|    3|          0|
+    |depth_reg_145               |   3|   0|    3|          0|
+    |index_1_reg_236             |   2|   0|    2|          0|
+    |index_reg_134               |   2|   0|    2|          0|
+    |input1_M_imag_load_reg_289  |  64|   0|   64|          0|
+    |input1_M_real_load_reg_284  |  64|   0|   64|          0|
+    |input2_M_imag_addr_reg_251  |   2|   0|    2|          0|
+    |input2_M_imag_load_reg_299  |  64|   0|   64|          0|
+    |input2_M_real_addr_reg_246  |   2|   0|    2|          0|
+    |input2_M_real_load_reg_294  |  64|   0|   64|          0|
+    |output_M_imag_addr_reg_261  |   2|   0|    2|          0|
+    |output_M_real_addr_reg_256  |   2|   0|    2|          0|
+    |p_r_M_imag_reg_309          |  64|   0|   64|          0|
+    |p_r_M_real_reg_304          |  64|   0|   64|          0|
+    |tmp_2_reg_241               |   5|   0|    5|          0|
+    +----------------------------+----+----+-----+-----------+
+    |Total                       | 417|   0|  417|          0|
+    +----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------------+-----+-----+------------+--------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_AWADDR   |  in |    9|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_ARADDR   |  in |    9|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |   AXILiteS   |     array    |
+|ap_clk                  |  in |    1| ap_ctrl_hs |   TopAdder   | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |   TopAdder   | return value |
+|interrupt               | out |    1| ap_ctrl_hs |   TopAdder   | return value |
++------------------------+-----+-----+------------+--------------+--------------+
+

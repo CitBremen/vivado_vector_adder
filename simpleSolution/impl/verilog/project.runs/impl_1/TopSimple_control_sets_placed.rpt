@@ -1,0 +1,64 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Mon May 23 12:42:39 2016
+| Host         : Abbas running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopSimple_control_sets_placed.rpt
+| Design       : TopSimple
+| Device       : xc7z020
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    11 |
+| Minimum Number of register sites lost to control set restrictions |    25 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              22 |           10 |
+| Yes          | No                    | No                     |             174 |           49 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              29 |           12 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------------------+----------------------------------------------+------------------+----------------+
+| Clock Signal |                 Enable Signal                |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++--------------+----------------------------------------------+----------------------------------------------+------------------+----------------+
+|  ap_clk      | tmp_reg_133[1]_i_1_n_0                       |                                              |                1 |              2 |
+|  ap_clk      | index_reg_880                                | TopSimple_AXILiteS_s_axi_U/SR[0]             |                1 |              2 |
+|  ap_clk      | TopSimple_AXILiteS_s_axi_U/rdata[31]_i_2_n_0 |                                              |                2 |              5 |
+|  ap_clk      |                                              |                                              |                3 |              6 |
+|  ap_clk      | TopSimple_AXILiteS_s_axi_U/aw_hs             |                                              |                3 |              7 |
+|  ap_clk      |                                              | TopSimple_AXILiteS_s_axi_U/ap_rst_n_inv      |               10 |             22 |
+|  ap_clk      | TopSimple_AXILiteS_s_axi_U/rdata[31]_i_2_n_0 | TopSimple_AXILiteS_s_axi_U/rdata[31]_i_1_n_0 |               11 |             27 |
+|  ap_clk      | rdata_reg[31]_i_8_n_0                        |                                              |               11 |             32 |
+|  ap_clk      | rdata_reg[31]_i_4_n_0                        |                                              |               12 |             32 |
+|  ap_clk      | rdata_reg[31]_i_12_n_0                       |                                              |               10 |             32 |
+|  ap_clk      | gen_write[1].mem_reg_i_77_n_0                |                                              |               10 |             64 |
++--------------+----------------------------------------------+----------------------------------------------+------------------+----------------+
+
+

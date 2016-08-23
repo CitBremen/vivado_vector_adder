@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon May 23 12:39:26 2016
+# Process ID: 9048
+# Current directory: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/simpleSolution/sim/verilog
+# Command line: wbtcv.exe -mode batch -source C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/simpleSolution/sim/verilog/xsim.dir/TopSimple/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/simpleSolution/sim/verilog/webtalk.log
+# Journal file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/simpleSolution/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/simpleSolution/sim/verilog/xsim.dir/TopSimple/webtalk/xsim_webtalk.tcl -notrace

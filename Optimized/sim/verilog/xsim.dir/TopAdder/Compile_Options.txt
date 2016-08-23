@@ -1,0 +1,1 @@
+"xil_defaultlib.apatb_TopAdder_top" -prj "TopAdder.prj" --lib "ieee_proposed=./ieee_proposed" -s "TopAdder" 

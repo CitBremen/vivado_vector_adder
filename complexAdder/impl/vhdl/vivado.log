@@ -1,0 +1,1223 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Jun 01 09:00:49 2016
+# Process ID: 8576
+# Current directory: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl
+# Command line: vivado.exe -notrace -mode batch -source run_vivado.tcl
+# Log file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/vivado.log
+# Journal file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl\vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace
+[Wed Jun 01 09:00:56 2016] Launched synth_1...
+Run output will be captured here: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/project.runs/synth_1/runme.log
+[Wed Jun 01 09:00:56 2016] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log complexAdder.vds -m64 -mode batch -messageDb vivado.pb -notrace -source complexAdder.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source complexAdder.tcl -notrace
+Command: synth_design -top complexAdder -part xc7z020clg484-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 288.504 ; gain = 117.668
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'complexAdder' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.vhd:40]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.vhd:63]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:12' bound to instance 'complexAdder_AXILiteS_s_axi_U' of component 'complexAdder_AXILiteS_s_axi' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'complexAdder_AXILiteS_s_axi' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:109]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_in1_M_real_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:936]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'complexAdder_AXILiteS_s_axi_ram' (1#1) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:936]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_in1_M_imag_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:296]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_in2_M_real_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:317]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_in2_M_imag_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:338]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_out_M_real_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:359]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_out_M_imag_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:380]
+WARNING: [Synth 8-614] signal 'ACLK_EN' is read in the process but is not in the sensitivity list [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:450]
+WARNING: [Synth 8-614] signal 'ACLK_EN' is read in the process but is not in the sensitivity list [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:501]
+INFO: [Synth 8-256] done synthesizing module 'complexAdder_AXILiteS_s_axi' (2#1) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:109]
+INFO: [Synth 8-256] done synthesizing module 'complexAdder' (3#1) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.vhd:40]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 325.723 ; gain = 154.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 325.723 ; gain = 154.887
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.xdc]
+Finished Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.264 . Memory (MB): peak = 640.199 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond_fu_141_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 14    
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 21    
++---RAMs : 
+	               96 Bit         RAMs := 6     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 15    
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module complexAdder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module complexAdder_AXILiteS_s_axi_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               96 Bit         RAMs := 1     
+Module complexAdder_AXILiteS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design complexAdder has port s_axi_AXILiteS_RRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design complexAdder has port s_axi_AXILiteS_RRESP[0] driven by constant 0
+WARNING: [Synth 8-3917] design complexAdder has port s_axi_AXILiteS_BRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design complexAdder has port s_axi_AXILiteS_BRESP[0] driven by constant 0
+WARNING: [Synth 8-3331] design complexAdder has unconnected port s_axi_AXILiteS_AWADDR[7]
+WARNING: [Synth 8-3331] design complexAdder has unconnected port s_axi_AXILiteS_ARADDR[7]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 640.199 ; gain = 469.363
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_in1_M_real_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_in1_M_imag_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_in2_M_real_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_in2_M_imag_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_out_M_real_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_out_M_imag_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM:
++-------------+---------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+-------------------------+
+|Module Name  | RTL Object                                                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name       | 
++-------------+---------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+-------------------------+
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_in1_M_real_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W | R | Port A and B | 0      | 1      | complexAdder/extram__7  | 
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_in1_M_imag_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W | R | Port A and B | 0      | 1      | complexAdder/extram__9  | 
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_in2_M_real_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W | R | Port A and B | 0      | 1      | complexAdder/extram__11 | 
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_in2_M_imag_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W | R | Port A and B | 0      | 1      | complexAdder/extram__13 | 
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_out_M_real_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W |   | Port A and B | 0      | 1      | complexAdder/extram__15 | 
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_out_M_imag_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W |   | Port A and B | 0      | 1      | complexAdder/extram__17 | 
++-------------+---------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+-------------------------+
+
+Note: The table above shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[0] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[1] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[1] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[2] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[2] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[3] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[3] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[4] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[4] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[5] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[5] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[6] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[6] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[7] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[7] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[8] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[8] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[9] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[9] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[10] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[10] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[11] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[11] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[12] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[12] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[13] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[13] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[14] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[14] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[15] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[15] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[16] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[16] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[17] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[17] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[18] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[18] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[19] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[19] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[20] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[20] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[21] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[21] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[22] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[22] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[23] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[23] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[24] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[24] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[25] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[25] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[26] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[26] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[27] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[27] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[28] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[28] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[29] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[29] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[30] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[30] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[31] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[31] )
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/rstate_reg[1] ' (FDS) to '\complexAdder_AXILiteS_s_axi_U/rstate_reg[0] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complexAdder_AXILiteS_s_axi_U/wstate_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_18) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_20) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_22) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_24) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_26) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_28) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_30) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_32) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_34) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_36) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_38) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_40) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_42) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_44) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_46) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_48) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_50) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_52) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_54) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_56) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_58) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_60) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_62) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_64) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_18) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_20) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_22) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_24) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_26) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_28) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_30) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_32) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_34) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_36) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_38) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_40) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_42) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_44) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_46) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_48) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_50) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_52) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_54) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_56) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_58) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_60) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_62) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_64) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/wstate_reg[2] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/rstate_reg[1] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[31] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[30] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[29] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[28] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[27] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[26] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[25] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[24] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[23] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[22] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[21] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[20] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[19] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[18] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[17] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[16] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[15] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[14] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[13] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[12] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[11] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[10] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[9] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[8] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[7] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[6] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[5] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[4] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[3] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[2] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[1] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[0] ) is unused and will be removed from module complexAdder.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 640.199 ; gain = 469.363
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_in2_M_imag_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_out_M_imag_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_1182' (FD) to 'i_1181'
+INFO: [Synth 8-3886] merging instance 'i_280' (FD) to 'i_1181'
+INFO: [Synth 8-3886] merging instance 'i_150' (FD) to 'i_1181'
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in1_M_real_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in1_M_real_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in1_M_imag_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in1_M_imag_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in2_M_real_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in2_M_real_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in2_M_imag_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in2_M_imag_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_out_M_real_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_out_M_imag_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 640.199 ; gain = 469.363
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    16|
+|2     |LUT1     |     2|
+|3     |LUT2     |    13|
+|4     |LUT3     |   170|
+|5     |LUT4     |    39|
+|6     |LUT5     |   133|
+|7     |LUT6     |    97|
+|8     |RAMB36E1 |     6|
+|9     |FDRE     |   392|
+|10    |FDSE     |     8|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------------------+----------------------------------+------+
+|      |Instance                        |Module                            |Cells |
++------+--------------------------------+----------------------------------+------+
+|1     |top                             |                                  |   876|
+|2     |  complexAdder_AXILiteS_s_axi_U |complexAdder_AXILiteS_s_axi       |   531|
+|3     |    int_in1_M_imag_V            |complexAdder_AXILiteS_s_axi_ram   |    37|
+|4     |    int_in1_M_real_V            |complexAdder_AXILiteS_s_axi_ram_0 |     5|
+|5     |    int_in2_M_imag_V            |complexAdder_AXILiteS_s_axi_ram_1 |   108|
+|6     |    int_in2_M_real_V            |complexAdder_AXILiteS_s_axi_ram_2 |   167|
+|7     |    int_out_M_imag_V            |complexAdder_AXILiteS_s_axi_ram_3 |    50|
+|8     |    int_out_M_real_V            |complexAdder_AXILiteS_s_axi_ram_4 |    37|
++------+--------------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 142 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 640.199 ; gain = 111.316
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 640.199 ; gain = 469.363
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+96 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 640.199 ; gain = 432.551
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 640.199 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 01 09:01:48 2016...
+[Wed Jun 01 09:01:51 2016] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:55 . Memory (MB): peak = 228.879 ; gain = 5.781
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.xdc]
+Finished Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 490.426 ; gain = 261.547
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 490.426 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 936.586 ; gain = 446.160
+[Wed Jun 01 09:02:16 2016] Launched impl_1...
+Run output will be captured here: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/project.runs/impl_1/runme.log
+[Wed Jun 01 09:02:16 2016] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log complexAdder.vdi -applog -m64 -messageDb vivado.pb -mode batch -source complexAdder.tcl -notrace
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source complexAdder.tcl -notrace
+Command: open_checkpoint C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/project.runs/impl_1/complexAdder.dcp
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/project.runs/impl_1/.Xil/Vivado-12648-/dcp/complexAdder.xdc]
+Finished Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/project.runs/impl_1/.Xil/Vivado-12648-/dcp/complexAdder.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2015.4 (64-bit) build 1412921
+open_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 487.320 ; gain = 300.328
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 492.594 ; gain = 5.273
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1b18d7ccc
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1b18d7ccc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 934.938 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 1b18d7ccc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.337 . Memory (MB): peak = 934.938 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 112 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 1a9e110f0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.728 . Memory (MB): peak = 934.938 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 934.938 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1a9e110f0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.786 . Memory (MB): peak = 934.938 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 6 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 6 Total Ports: 12
+Ending PowerOpt Patch Enables Task | Checksum: 7d02e602
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 990.969 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 7d02e602
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 990.969 ; gain = 56.031
+INFO: [Common 17-83] Releasing license: Implementation
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 990.969 ; gain = 503.648
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/project.runs/impl_1/complexAdder_drc_opted.rpt.
+report_drc: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 990.969 ; gain = 0.000
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 990.969 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: 00000000
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 990.969 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: 00000000
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 00000000
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: 00000000
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ec9625e6
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Init Lut Pin Assignment
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 139767fb2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 1.2.1 Place Init Design | Checksum: 1731365e5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 1.2 Build Placer Netlist Model | Checksum: 1731365e5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+
+Phase 1.3.1 Constrain Global/Regional Clocks
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 1731365e5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1731365e5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1731365e5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 2252e976e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:24 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 2252e976e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:24 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 19eb211c0
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:27 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1c75d3236
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:27 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 3.4 updateClock Trees: DP
+Phase 3.4 updateClock Trees: DP | Checksum: 1c75d3236
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:27 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1e6e371a9
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:27 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 1e6e371a9
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+
+Phase 3.7.1 Commit Small Macros and Core Logic
+
+Phase 3.7.1.1 Commit Slice Clusters
+Phase 3.7.1.1 Commit Slice Clusters | Checksum: 1398e16a5
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 3.7.1 Commit Small Macros and Core Logic | Checksum: 1398e16a5
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1398e16a5
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1398e16a5
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 3.7 Small Shape Detail Placement | Checksum: 1398e16a5
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 205a116e7
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 205a116e7
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+
+Phase 4.1.1 callUpdateTimingBeforePCO
+Phase 4.1.1 callUpdateTimingBeforePCO | Checksum: 2196f712b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 4.1.2 updateClock Trees: PCOPT
+Phase 4.1.2 updateClock Trees: PCOPT | Checksum: 2196f712b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 4.1.3 Post Placement Optimization
+
+Phase 4.1.3.1 PCOPT Shape updates
+
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes | Checksum: 2196f712b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 4.1.3.1.2 deleteLutnmShapes
+
+Phase 4.1.3.1.2.1 deleteShapes
+Phase 4.1.3.1.2.1 deleteShapes | Checksum: 2e682a64c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 4.1.3.1.2 deleteLutnmShapes | Checksum: 2e682a64c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 4.1.3.1 PCOPT Shape updates | Checksum: 2e682a64c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 4.1.3.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.080. For the most accurate timing information please run report_timing.
+Phase 4.1.3.2 Post Placement Timing Optimization | Checksum: 222b1f949
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 4.1.3 Post Placement Optimization | Checksum: 222b1f949
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 222b1f949
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 222b1f949
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 222b1f949
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 4.4 Placer Reporting
+
+Phase 4.4.1 Restore STA
+Phase 4.4.1 Restore STA | Checksum: 222b1f949
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 4.4 Placer Reporting | Checksum: 222b1f949
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 17aeeb000
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 17aeeb000
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+Ending Placer Task | Checksum: 147f3ffb5
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 990.969 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 990.969 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.220 . Memory (MB): peak = 990.969 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 990.969 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 990.969 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 990.969 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+Phase 1 Physical Synthesis Initialization | Checksum: 188e93ca0
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 990.969 ; gain = 0.000
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.500 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+Ending Physical Synthesis Task | Checksum: 2ec54193a
+----- Checksum: : 267c97247 : 848aa6f3 
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 990.969 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.227 . Memory (MB): peak = 990.969 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: faf100eb ConstDB: 0 ShapeSum: dee035a7 RouteDB: 848aa6f3
+
+Phase 1 Build RT Design
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WDATA[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WDATA[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WSTRB[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WSTRB[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WSTRB[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WSTRB[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WSTRB[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WSTRB[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_WSTRB[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_WSTRB[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_AWADDR[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_AWADDR[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_AWADDR[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_AWADDR[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_AWADDR[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_AWADDR[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_ARADDR[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_ARADDR[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_ARADDR[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_ARADDR[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_ARVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_ARVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_ARADDR[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_ARADDR[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_RREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_RREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_ARADDR[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_ARADDR[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_ARADDR[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_ARADDR[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_ARADDR[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_ARADDR[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_ARADDR[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_ARADDR[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_AWVALID" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_AWVALID". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_BREADY" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_BREADY". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_AWADDR[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_AWADDR[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_AWADDR[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_AWADDR[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_AWADDR[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_AWADDR[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "s_axi_AXILiteS_AWADDR[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "s_axi_AXILiteS_AWADDR[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+Phase 1 Build RT Design | Checksum: d41d4109
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:42 . Memory (MB): peak = 1078.219 ; gain = 87.250
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: d41d4109
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:42 . Memory (MB): peak = 1080.152 ; gain = 89.184
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: d41d4109
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:43 . Memory (MB): peak = 1088.230 ; gain = 97.262
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 139d450a2
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:44 . Memory (MB): peak = 1090.887 ; gain = 99.918
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.949  | TNS=0.000  | WHS=-0.106 | THS=-1.328 |
+
+Phase 2 Router Initialization | Checksum: 1488e789c
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:45 . Memory (MB): peak = 1090.887 ; gain = 99.918
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 6adce5c0
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:45 . Memory (MB): peak = 1090.887 ; gain = 99.918
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 61
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 26795fe46
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:45 . Memory (MB): peak = 1090.887 ; gain = 99.918
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.701  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 27a749881
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:45 . Memory (MB): peak = 1090.887 ; gain = 99.918
+Phase 4 Rip-up And Reroute | Checksum: 27a749881
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:45 . Memory (MB): peak = 1090.887 ; gain = 99.918
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 25fe10e3b
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:45 . Memory (MB): peak = 1090.887 ; gain = 99.918
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.851  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 25fe10e3b
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:45 . Memory (MB): peak = 1090.887 ; gain = 99.918
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 25fe10e3b
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:45 . Memory (MB): peak = 1090.887 ; gain = 99.918
+Phase 5 Delay and Skew Optimization | Checksum: 25fe10e3b
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:45 . Memory (MB): peak = 1090.887 ; gain = 99.918
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Update Timing
+Phase 6.1 Update Timing | Checksum: 1e899824e
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:46 . Memory (MB): peak = 1090.887 ; gain = 99.918
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.851  | TNS=0.000  | WHS=0.185  | THS=0.000  |
+
+Phase 6 Post Hold Fix | Checksum: 1e899824e
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:46 . Memory (MB): peak = 1090.887 ; gain = 99.918
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.127162 %
+  Global Horizontal Routing Utilization  = 0.121957 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 2646f8bbe
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:46 . Memory (MB): peak = 1090.887 ; gain = 99.918
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 2646f8bbe
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.148 ; gain = 101.180
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 20f9e90a9
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.148 ; gain = 101.180
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.851  | TNS=0.000  | WHS=0.185  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 20f9e90a9
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.148 ; gain = 101.180
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:46 . Memory (MB): peak = 1092.148 ; gain = 101.180
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+59 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:47 . Memory (MB): peak = 1092.148 ; gain = 101.180
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.393 . Memory (MB): peak = 1092.148 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/project.runs/impl_1/complexAdder_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 01 09:04:47 2016...
+[Wed Jun 01 09:04:52 2016] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:02:36 . Memory (MB): peak = 946.109 ; gain = 7.375
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/.Xil/Vivado-8576-/dcp/complexAdder.xdc]
+Finished Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/.Xil/Vivado-8576-/dcp/complexAdder.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.196 . Memory (MB): peak = 1036.070 ; gain = 0.016
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.196 . Memory (MB): peak = 1036.070 ; gain = 0.016
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1107.305 ; gain = 0.957
+
+
+Implementation tool: Xilinx Vivado v.2015.4
+Device target:       xc7z020clg484-1
+Report date:         Wed Jun 01 09:04:55 +0200 2016
+
+#=== Resource usage ===
+SLICE:          128
+LUT:            343
+FF:             400
+DSP:              0
+BRAM:            12
+SRL:              0
+#=== Final timing ===
+CP required:    10.000
+CP achieved:    7.148
+Timing met
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 01 09:04:55 2016...

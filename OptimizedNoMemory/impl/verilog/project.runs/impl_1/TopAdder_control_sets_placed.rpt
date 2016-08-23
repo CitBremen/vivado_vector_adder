@@ -1,0 +1,78 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Sat May 21 23:56:49 2016
+| Host         : Abbas running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopAdder_control_sets_placed.rpt
+| Design       : TopAdder
+| Device       : xc7z020
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    25 |
+| Minimum Number of register sites lost to control set restrictions |    33 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             180 |           52 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              50 |           21 |
+| Yes          | No                    | No                     |             785 |          222 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+------------------------------------------------+---------------------------------------------+------------------+----------------+
+| Clock Signal |                  Enable Signal                 |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++--------------+------------------------------------------------+---------------------------------------------+------------------+----------------+
+|  ap_clk      |                                                | input2_M_real_ce0                           |                1 |              1 |
+|  ap_clk      | tmp_reg_608_reg0                               |                                             |                1 |              2 |
+|  ap_clk      | ap_sig_bdd_129                                 |                                             |                3 |              6 |
+|  ap_clk      | TopAdder_AXILiteS_s_axi_U/aw_hs                |                                             |                3 |              9 |
+|  ap_clk      |                                                | TopAdder_AXILiteS_s_axi_U/rdata_reg[7]_i_13 |                4 |             10 |
+|  ap_clk      | TopAdder_AXILiteS_s_axi_U/rdata[31]_i_1_n_0    |                                             |               16 |             32 |
+|  ap_clk      | input2_M_imag_load_reg_640[31]_i_1_n_0         |                                             |                6 |             32 |
+|  ap_clk      | input2_M_imag_load_reg_640_reg[31]_i_3_n_0     |                                             |                5 |             32 |
+|  ap_clk      | input2_M_real_load_reg_625[31]_i_1_n_0         |                                             |                5 |             32 |
+|  ap_clk      | input2_M_real_load_reg_625_reg[31]_i_3_n_0     |                                             |                6 |             32 |
+|  ap_clk      | rdata_reg[1]_i_17_n_0                          |                                             |               10 |             32 |
+|  ap_clk      | rdata_reg[2]_i_20_n_0                          |                                             |               10 |             32 |
+|  ap_clk      | rdata_reg[31]_i_14_n_0                         |                                             |               12 |             32 |
+|  ap_clk      | rdata_reg[31]_i_16_n_0                         |                                             |                8 |             32 |
+|  ap_clk      | rdata_reg[31]_i_22_n_0                         |                                             |                6 |             32 |
+|  ap_clk      | rdata_reg[31]_i_23_n_0                         |                                             |                9 |             32 |
+|  ap_clk      | rdata_reg[31]_i_28_n_0                         |                                             |                8 |             32 |
+|  ap_clk      | rdata_reg[31]_i_33_n_0                         |                                             |               10 |             32 |
+|  ap_clk      | rdata_reg[7]_i_13_n_0                          |                                             |               12 |             32 |
+|  ap_clk      | rdata_reg[7]_i_9_n_0                           |                                             |               12 |             32 |
+|  ap_clk      | reg_4260                                       |                                             |               10 |             32 |
+|  ap_clk      |                                                | TopAdder_AXILiteS_s_axi_U/SR[0]             |               16 |             39 |
+|  ap_clk      | p_x_M_imag_read_assign_reg_6350                |                                             |               21 |             64 |
+|  ap_clk      |                                                |                                             |               52 |            180 |
+|  ap_clk      | p_x_M_real_read_assign_reg_630_reg[31]_i_4_n_0 |                                             |               49 |            192 |
++--------------+------------------------------------------------+---------------------------------------------+------------------+----------------+
+
+

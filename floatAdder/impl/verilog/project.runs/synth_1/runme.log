@@ -1,0 +1,544 @@
+
+*** Running vivado
+    with args -log floatAdder.vds -m64 -mode batch -messageDb vivado.pb -notrace -source floatAdder.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source floatAdder.tcl -notrace
+Command: synth_design -top floatAdder -part xc7z020clg484-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 288.418 ; gain = 117.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'floatAdder' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/impl/verilog/floatAdder.v:12]
+	Parameter ap_const_logic_1 bound to: 1'b1 
+	Parameter ap_const_logic_0 bound to: 1'b0 
+	Parameter ap_ST_st1_fsm_0 bound to: 3'b001 
+	Parameter ap_ST_pp0_stg0_fsm_1 bound to: 3'b010 
+	Parameter ap_ST_st4_fsm_2 bound to: 3'b100 
+	Parameter ap_const_lv32_0 bound to: 0 - type: integer 
+	Parameter ap_const_lv1_1 bound to: 1'b1 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ap_const_int64_8 bound to: 8 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ap_const_lv32_1 bound to: 1 - type: integer 
+	Parameter ap_const_lv1_0 bound to: 1'b0 
+	Parameter ap_const_lv2_0 bound to: 2'b00 
+	Parameter ap_const_lv2_3 bound to: 2'b11 
+	Parameter ap_const_lv2_1 bound to: 2'b01 
+	Parameter ap_const_lv32_2 bound to: 2 - type: integer 
+	Parameter ap_true bound to: 1'b1 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/impl/verilog/floatAdder.v:81]
+INFO: [Synth 8-638] synthesizing module 'floatAdder_AXILiteS_s_axi' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/impl/verilog/floatAdder_AXILiteS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 7'b0000000 
+	Parameter ADDR_GIE bound to: 7'b0000100 
+	Parameter ADDR_IER bound to: 7'b0001000 
+	Parameter ADDR_ISR bound to: 7'b0001100 
+	Parameter ADDR_AP_RETURN_0 bound to: 7'b0010000 
+	Parameter ADDR_IN1_V_BASE bound to: 7'b0100000 
+	Parameter ADDR_IN1_V_HIGH bound to: 7'b0101111 
+	Parameter ADDR_IN2_V_BASE bound to: 7'b0110000 
+	Parameter ADDR_IN2_V_HIGH bound to: 7'b0111111 
+	Parameter ADDR_OUT_V_BASE bound to: 7'b1000000 
+	Parameter ADDR_OUT_V_HIGH bound to: 7'b1001111 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'floatAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/impl/verilog/floatAdder_AXILiteS_s_axi.v:566]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'floatAdder_AXILiteS_s_axi_ram' (1#1) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/impl/verilog/floatAdder_AXILiteS_s_axi.v:566]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/impl/verilog/floatAdder_AXILiteS_s_axi.v:323]
+INFO: [Synth 8-256] done synthesizing module 'floatAdder_AXILiteS_s_axi' (2#1) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/impl/verilog/floatAdder_AXILiteS_s_axi.v:9]
+INFO: [Synth 8-256] done synthesizing module 'floatAdder' (3#1) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/impl/verilog/floatAdder.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 325.664 ; gain = 155.141
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 325.664 ; gain = 155.141
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/impl/verilog/floatAdder.xdc]
+Finished Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/floatAdder/impl/verilog/floatAdder.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 638.563 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond_fu_99_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 16    
++---RAMs : 
+	               96 Bit         RAMs := 3     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module floatAdder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module floatAdder_AXILiteS_s_axi_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               96 Bit         RAMs := 1     
+Module floatAdder_AXILiteS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design floatAdder has port s_axi_AXILiteS_RRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design floatAdder has port s_axi_AXILiteS_RRESP[0] driven by constant 0
+WARNING: [Synth 8-3917] design floatAdder has port s_axi_AXILiteS_BRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design floatAdder has port s_axi_AXILiteS_BRESP[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 638.563 ; gain = 468.039
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3971] The signal floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal floatAdder_AXILiteS_s_axi_U/int_in2_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal floatAdder_AXILiteS_s_axi_U/int_out_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM:
++------------+------------------------------------------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+----------------------+
+|Module Name | RTL Object                                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name    | 
++------------+------------------------------------------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+----------------------+
+|floatAdder  | floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W | R | Port A and B | 0      | 1      | floatAdder/extram__4 | 
+|floatAdder  | floatAdder_AXILiteS_s_axi_U/int_in2_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W | R | Port A and B | 0      | 1      | floatAdder/extram__6 | 
+|floatAdder  | floatAdder_AXILiteS_s_axi_U/int_out_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W |   | Port A and B | 0      | 1      | floatAdder/extram__8 | 
++------------+------------------------------------------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+----------------------+
+
+Note: The table above shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[0] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[1] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[1] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[2] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[2] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[3] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[3] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[4] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[4] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[5] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[5] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[6] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[6] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[7] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[7] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[8] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[8] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[9] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[9] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[10] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[10] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[11] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[11] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[12] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[12] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[13] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[13] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[14] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[14] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[15] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[15] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[16] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[16] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[17] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[17] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[18] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[18] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[19] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[19] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[20] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[20] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[21] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[21] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[22] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[22] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[23] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[23] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[24] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[24] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[25] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[25] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[26] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[26] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[27] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[27] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[28] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[28] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[29] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[29] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[30] '
+INFO: [Synth 8-3886] merging instance '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[30] ' (FDRE) to '\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[31] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (i_38) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_40) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_42) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_44) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_46) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_48) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_50) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_52) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_54) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_56) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_58) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_60) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_62) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_64) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_38) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_40) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_42) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_44) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_46) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_48) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_50) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_52) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_54) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_56) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_58) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_60) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_62) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_64) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_18) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_20) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_22) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_24) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_26) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_28) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_30) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_32) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_34) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_36) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_38) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_40) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_42) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_44) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_46) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_48) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_50) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_52) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_54) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_56) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_58) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_60) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_62) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_64) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[31] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[30] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[29] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[28] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[27] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[26] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[25] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[24] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[23] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[22] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[21] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[20] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[19] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[18] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[17] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[16] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[15] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[14] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[13] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[12] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[11] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[10] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[9] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[8] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[7] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[6] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[5] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[4] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[3] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[2] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[1] ) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (\floatAdder_AXILiteS_s_axi_U/int_ap_return_reg[0] ) is unused and will be removed from module floatAdder.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 638.563 ; gain = 468.039
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:12 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (i_37) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_39) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_41) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_43) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_45) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_47) is unused and will be removed from module floatAdder.
+WARNING: [Synth 8-3332] Sequential element (i_49) is unused and will be removed from module floatAdder.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3971] The signal floatAdder_AXILiteS_s_axi_U/int_out_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:13 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_634' (FD) to 'i_633'
+INFO: [Synth 8-4480] The timing for the instance \floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \floatAdder_AXILiteS_s_axi_U/int_in2_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \floatAdder_AXILiteS_s_axi_U/int_in2_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \floatAdder_AXILiteS_s_axi_U/int_out_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 638.563 ; gain = 468.039
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:01 ; elapsed = 00:01:14 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     5|
+|2     |LUT1     |     3|
+|3     |LUT2     |    10|
+|4     |LUT3     |    34|
+|5     |LUT4     |    16|
+|6     |LUT5     |    94|
+|7     |LUT6     |    51|
+|8     |RAMB36E1 |     3|
+|9     |FDRE     |   201|
+|10    |FDSE     |     1|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------+------+
+|      |Instance                      |Module                          |Cells |
++------+------------------------------+--------------------------------+------+
+|1     |top                           |                                |   418|
+|2     |  floatAdder_AXILiteS_s_axi_U |floatAdder_AXILiteS_s_axi       |   264|
+|3     |    int_in1_V                 |floatAdder_AXILiteS_s_axi_ram   |    45|
+|4     |    int_in2_V                 |floatAdder_AXILiteS_s_axi_ram_0 |    37|
+|5     |    int_out_V                 |floatAdder_AXILiteS_s_axi_ram_1 |    77|
++------+------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:15 . Memory (MB): peak = 638.563 ; gain = 468.039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 145 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 638.563 ; gain = 111.402
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:16 . Memory (MB): peak = 638.563 ; gain = 468.039
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:08 . Memory (MB): peak = 638.563 ; gain = 430.887
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 638.563 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 01 07:10:27 2016...

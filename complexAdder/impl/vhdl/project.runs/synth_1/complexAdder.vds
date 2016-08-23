@@ -1,0 +1,577 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Jun 01 09:00:57 2016
+# Process ID: 11680
+# Current directory: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/project.runs/synth_1
+# Command line: vivado.exe -log complexAdder.vds -mode batch -messageDb vivado.pb -notrace -source complexAdder.tcl
+# Log file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/project.runs/synth_1/complexAdder.vds
+# Journal file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source complexAdder.tcl -notrace
+Command: synth_design -top complexAdder -part xc7z020clg484-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 288.504 ; gain = 117.668
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'complexAdder' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.vhd:40]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.vhd:63]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:12' bound to instance 'complexAdder_AXILiteS_s_axi_U' of component 'complexAdder_AXILiteS_s_axi' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'complexAdder_AXILiteS_s_axi' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:109]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_in1_M_real_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:936]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'complexAdder_AXILiteS_s_axi_ram' (1#1) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:936]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_in1_M_imag_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:296]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_in2_M_real_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:317]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_in2_M_imag_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:338]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_out_M_real_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:359]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'complexAdder_AXILiteS_s_axi_ram' declared at 'C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:913' bound to instance 'int_out_M_imag_V' of component 'complexAdder_AXILiteS_s_axi_ram' [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:380]
+WARNING: [Synth 8-614] signal 'ACLK_EN' is read in the process but is not in the sensitivity list [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:450]
+WARNING: [Synth 8-614] signal 'ACLK_EN' is read in the process but is not in the sensitivity list [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:501]
+INFO: [Synth 8-256] done synthesizing module 'complexAdder_AXILiteS_s_axi' (2#1) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder_AXILiteS_s_axi.vhd:109]
+INFO: [Synth 8-256] done synthesizing module 'complexAdder' (3#1) [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.vhd:40]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 325.723 ; gain = 154.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 325.723 ; gain = 154.887
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.xdc]
+Finished Parsing XDC File [C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complexAdder/impl/vhdl/complexAdder.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.264 . Memory (MB): peak = 640.199 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "exitcond_fu_141_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 14    
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 21    
++---RAMs : 
+	               96 Bit         RAMs := 6     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 15    
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module complexAdder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module complexAdder_AXILiteS_s_axi_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               96 Bit         RAMs := 1     
+Module complexAdder_AXILiteS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design complexAdder has port s_axi_AXILiteS_RRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design complexAdder has port s_axi_AXILiteS_RRESP[0] driven by constant 0
+WARNING: [Synth 8-3917] design complexAdder has port s_axi_AXILiteS_BRESP[1] driven by constant 0
+WARNING: [Synth 8-3917] design complexAdder has port s_axi_AXILiteS_BRESP[0] driven by constant 0
+WARNING: [Synth 8-3331] design complexAdder has unconnected port s_axi_AXILiteS_AWADDR[7]
+WARNING: [Synth 8-3331] design complexAdder has unconnected port s_axi_AXILiteS_ARADDR[7]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 640.199 ; gain = 469.363
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_in1_M_real_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_in1_M_imag_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_in2_M_real_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_in2_M_imag_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_out_M_real_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_out_M_imag_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM:
++-------------+---------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+-------------------------+
+|Module Name  | RTL Object                                                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name       | 
++-------------+---------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+-------------------------+
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_in1_M_real_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W | R | Port A and B | 0      | 1      | complexAdder/extram__7  | 
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_in1_M_imag_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W | R | Port A and B | 0      | 1      | complexAdder/extram__9  | 
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_in2_M_real_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W | R | Port A and B | 0      | 1      | complexAdder/extram__11 | 
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_in2_M_imag_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W | R | Port A and B | 0      | 1      | complexAdder/extram__13 | 
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_out_M_real_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W |   | Port A and B | 0      | 1      | complexAdder/extram__15 | 
+|complexAdder | complexAdder_AXILiteS_s_axi_U/int_out_M_imag_V/gen_write[1].mem_reg | 4 x 32(READ_FIRST)     | W | R | 4 x 32(READ_FIRST)     | W |   | Port A and B | 0      | 1      | complexAdder/extram__17 | 
++-------------+---------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+-------------------------+
+
+Note: The table above shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[0] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[1] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[1] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[2] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[2] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[3] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[3] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[4] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[4] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[5] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[5] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[6] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[6] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[7] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[7] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[8] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[8] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[9] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[9] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[10] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[10] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[11] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[11] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[12] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[12] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[13] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[13] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[14] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[14] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[15] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[15] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[16] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[16] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[17] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[17] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[18] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[18] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[19] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[19] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[20] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[20] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[21] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[21] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[22] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[22] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[23] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[23] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[24] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[24] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[25] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[25] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[26] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[26] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[27] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[27] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[28] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[28] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[29] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[29] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[30] '
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[30] ' (FDRE) to '\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[31] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[31] )
+INFO: [Synth 8-3886] merging instance '\complexAdder_AXILiteS_s_axi_U/rstate_reg[1] ' (FDS) to '\complexAdder_AXILiteS_s_axi_U/rstate_reg[0] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\complexAdder_AXILiteS_s_axi_U/wstate_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_18) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_20) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_22) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_24) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_26) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_28) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_30) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_32) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_34) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_36) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_38) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_40) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_42) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_44) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_46) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_48) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_50) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_52) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_54) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_56) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_58) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_60) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_62) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_64) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_18) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_20) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_22) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_24) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_26) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_28) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_30) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_32) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_34) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_36) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_38) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_40) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_42) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_44) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_46) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_48) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_50) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_52) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_54) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_56) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_58) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_60) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_62) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (i_64) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/wstate_reg[2] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/rstate_reg[1] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[31] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[30] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[29] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[28] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[27] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[26] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[25] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[24] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[23] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[22] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[21] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[20] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[19] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[18] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[17] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[16] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[15] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[14] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[13] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[12] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[11] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[10] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[9] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[8] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[7] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[6] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[5] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[4] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[3] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[2] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[1] ) is unused and will be removed from module complexAdder.
+WARNING: [Synth 8-3332] Sequential element (\complexAdder_AXILiteS_s_axi_U/int_ap_return_reg[0] ) is unused and will be removed from module complexAdder.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 640.199 ; gain = 469.363
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_in2_M_imag_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal complexAdder_AXILiteS_s_axi_U/int_out_M_imag_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_1182' (FD) to 'i_1181'
+INFO: [Synth 8-3886] merging instance 'i_280' (FD) to 'i_1181'
+INFO: [Synth 8-3886] merging instance 'i_150' (FD) to 'i_1181'
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in1_M_real_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in1_M_real_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in1_M_imag_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in1_M_imag_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in2_M_real_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in2_M_real_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in2_M_imag_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_in2_M_imag_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_out_M_real_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \complexAdder_AXILiteS_s_axi_U/int_out_M_imag_V/gen_write[1].mem_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 640.199 ; gain = 469.363
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    16|
+|2     |LUT1     |     2|
+|3     |LUT2     |    13|
+|4     |LUT3     |   170|
+|5     |LUT4     |    39|
+|6     |LUT5     |   133|
+|7     |LUT6     |    97|
+|8     |RAMB36E1 |     6|
+|9     |FDRE     |   392|
+|10    |FDSE     |     8|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------------------+----------------------------------+------+
+|      |Instance                        |Module                            |Cells |
++------+--------------------------------+----------------------------------+------+
+|1     |top                             |                                  |   876|
+|2     |  complexAdder_AXILiteS_s_axi_U |complexAdder_AXILiteS_s_axi       |   531|
+|3     |    int_in1_M_imag_V            |complexAdder_AXILiteS_s_axi_ram   |    37|
+|4     |    int_in1_M_real_V            |complexAdder_AXILiteS_s_axi_ram_0 |     5|
+|5     |    int_in2_M_imag_V            |complexAdder_AXILiteS_s_axi_ram_1 |   108|
+|6     |    int_in2_M_real_V            |complexAdder_AXILiteS_s_axi_ram_2 |   167|
+|7     |    int_out_M_imag_V            |complexAdder_AXILiteS_s_axi_ram_3 |    50|
+|8     |    int_out_M_real_V            |complexAdder_AXILiteS_s_axi_ram_4 |    37|
++------+--------------------------------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 640.199 ; gain = 469.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 142 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 640.199 ; gain = 111.316
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:47 . Memory (MB): peak = 640.199 ; gain = 469.363
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+96 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 640.199 ; gain = 432.551
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 640.199 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 01 09:01:48 2016...

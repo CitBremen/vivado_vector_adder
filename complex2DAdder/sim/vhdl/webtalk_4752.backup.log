@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Jun 09 23:37:51 2016
+# Process ID: 4752
+# Current directory: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl
+# Command line: wbtcv.exe -mode batch -source C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/xsim.dir/complex2DAdder/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/webtalk.log
+# Journal file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/sim/vhdl/xsim.dir/complex2DAdder/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 48.629 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 09 23:37:58 2016...

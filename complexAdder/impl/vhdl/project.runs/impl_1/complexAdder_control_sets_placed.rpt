@@ -1,0 +1,68 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Wed Jun 01 09:03:53 2016
+| Host         : Abbas running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file complexAdder_control_sets_placed.rpt
+| Design       : complexAdder
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    15 |
+| Minimum Number of register sites lost to control set restrictions |    32 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               3 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              34 |           15 |
+| Yes          | No                    | No                     |             334 |           94 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              29 |           13 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+| Clock Signal |                     Enable Signal                    |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++--------------+------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|  ap_clk      | tmp_reg_184[1]_i_1_n_0                               |                                                         |                1 |              2 |
+|  ap_clk      | index_reg_1300                                       | complexAdder_AXILiteS_s_axi_U/SR[0]                     |                1 |              2 |
+|  ap_clk      |                                                      |                                                         |                3 |              3 |
+|  ap_clk      | complexAdder_AXILiteS_s_axi_U/rdata_data[31]_i_2_n_0 |                                                         |                2 |              5 |
+|  ap_clk      |                                                      | complexAdder_AXILiteS_s_axi_U/rdata_data_reg[31]_i_25_0 |                1 |              6 |
+|  ap_clk      | complexAdder_AXILiteS_s_axi_U/aw_hs                  |                                                         |                3 |              7 |
+|  ap_clk      | complexAdder_AXILiteS_s_axi_U/rdata_data[31]_i_2_n_0 | complexAdder_AXILiteS_s_axi_U/rdata_data[31]_i_1_n_0    |               12 |             27 |
+|  ap_clk      |                                                      | complexAdder_AXILiteS_s_axi_U/ARESET                    |               14 |             28 |
+|  ap_clk      | rdata_data_reg[31]_i_25_n_0                          |                                                         |                9 |             32 |
+|  ap_clk      | rdata_data_reg[31]_i_20_n_0                          |                                                         |                9 |             32 |
+|  ap_clk      | rdata_data_reg[31]_i_18_n_0                          |                                                         |               11 |             32 |
+|  ap_clk      | rdata_data_reg[31]_i_14_n_0                          |                                                         |               10 |             32 |
+|  ap_clk      | rdata_data_reg[31]_i_12_n_0                          |                                                         |                8 |             32 |
+|  ap_clk      | rdata_data_reg[31]_i_11_n_0                          |                                                         |               13 |             32 |
+|  ap_clk      | gen_write[1].mem_reg_i_77__0_n_0                     |                                                         |               28 |            128 |
++--------------+------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# xsim v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat May 21 22:25:04 2016
+# Process ID: 24340
+# Current directory: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/OptimizedNoMemory/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/TopAdder/xsim_script.tcl}
+# Log file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/OptimizedNoMemory/sim/verilog/xsim.log
+# Journal file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/OptimizedNoMemory/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/TopAdder/xsim_script.tcl
+# xsim {TopAdder} -maxdeltaid 10000 -autoloadwcfg -tclbatch {TopAdder.tcl}
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source TopAdder.tcl
+## run all
+$finish called at time : 4895 ns : File "C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/OptimizedNoMemory/sim/verilog/TopAdder.autotb.v" Line 351
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat May 21 22:25:14 2016...

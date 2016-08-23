@@ -1,0 +1,50 @@
+   Compiling ../../../adder_tc.cpp in debug mode
+   Compiling ../../../adder.cpp in debug mode
+   Generating csim.exe
+ B real [0][0]1
+ B Img [0][0]-1
+ B real [0][1]1.5
+ B Img [0][1]-1.5
+ B real [0][2]2
+ B Img [0][2]-2.5
+ B real [1][0]2
+ B Img [1][0]-2
+ B real [1][1]2.5
+ B Img [1][1]-2.5
+ B real [1][2]3
+ B Img [1][2]-3.5
+ B real [2][0]3
+ B Img [2][0]-3
+ B real [2][1]3.5
+ B Img [2][1]-3.5
+ B real [2][2]4
+ B Img [2][2]-4.5
+ B real [3][0]4
+ B Img [3][0]-4
+ B real [3][1]4.5
+ B Img [3][1]-4.5
+ B real [3][2]4
+ B Img [3][2]-4.5
+ B real [4][0]5
+ B Img [4][0]-5
+ B real [4][1]5.5
+ B Img [4][1]-5.5
+ B real [4][2]5
+ B Img [4][2]-5.5
+ C real :1.1
+ C Img :3.3
+ C real :2
+ C Img :2
+ C real :3.1
+ C Img :7.4
+ C real :3.1
+ C Img :7.4
+ C real :3.1
+ C Img :7.4
+
+(3.1,0.8)
+(5,-1.5)
+(7.1,2.9)
+(7.1,2.9)
+(8.1,1.9)
+@I [SIM-1] CSim done with 0 errors.

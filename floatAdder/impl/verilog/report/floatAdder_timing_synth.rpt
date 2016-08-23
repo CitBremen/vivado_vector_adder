@@ -1,0 +1,80 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Wed Jun 01 07:11:01 2016
+| Host         : Abbas running 64-bit major release  (build 9200)
+| Command      : report_timing -file ./report/floatAdder_timing_synth.rpt
+| Design       : floatAdder
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             3.897ns  (required time - arrival time)
+  Source:                 floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            floatAdder_AXILiteS_s_axi_U/int_out_V/gen_write[1].mem_reg/DIADI[17]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.475ns  (logic 3.866ns (70.616%)  route 1.609ns (29.384%))
+  Logic Levels:           6  (CARRY4=5 LUT3=1)
+  Clock Path Skew:        -0.173ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.607ns = ( 11.607 - 10.000 ) 
+    Source Clock Delay      (SCD):    1.780ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=207, unset)          1.780     1.780    floatAdder_AXILiteS_s_axi_U/int_in1_V/ap_clk
+                         RAMB36E1                                     r  floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[0])
+                                                      2.454     4.234 r  floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg/DOADO[0]
+                         net (fo=3, unplaced)         0.800     5.034    floatAdder_AXILiteS_s_axi_U/int_in1_V/DOADO[0]
+                         LUT3 (Prop_lut3_I0_O)        0.148     5.182 r  floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg_i_41/O
+                         net (fo=1, unplaced)         0.000     5.182    floatAdder_AXILiteS_s_axi_U/int_in1_V/in1_V_q0[0]
+                         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.576     5.758 r  floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg_i_5/CO[3]
+                         net (fo=1, unplaced)         0.009     5.767    floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg_i_5_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.884 r  floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg_i_4/CO[3]
+                         net (fo=1, unplaced)         0.000     5.884    floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg_i_4_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.001 r  floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg_i_3/CO[3]
+                         net (fo=1, unplaced)         0.000     6.001    floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg_i_3_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     6.118 r  floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     6.118    floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg_i_2_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     6.455 r  floatAdder_AXILiteS_s_axi_U/int_in1_V/gen_write[1].mem_reg_i_1/O[1]
+                         net (fo=1, unplaced)         0.800     7.255    floatAdder_AXILiteS_s_axi_U/int_out_V/out_V_d0[17]
+                         RAMB36E1                                     r  floatAdder_AXILiteS_s_axi_U/int_out_V/gen_write[1].mem_reg/DIADI[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=207, unset)          1.607    11.607    floatAdder_AXILiteS_s_axi_U/int_out_V/ap_clk
+                         RAMB36E1                                     r  floatAdder_AXILiteS_s_axi_U/int_out_V/gen_write[1].mem_reg/CLKARDCLK
+                         clock pessimism              0.000    11.607    
+                         clock uncertainty           -0.035    11.572    
+                         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_DIADI[17])
+                                                     -0.420    11.152    floatAdder_AXILiteS_s_axi_U/int_out_V/gen_write[1].mem_reg
+  -------------------------------------------------------------------
+                         required time                         11.152    
+                         arrival time                          -7.255    
+  -------------------------------------------------------------------
+                         slack                                  3.897    
+
+
+
+

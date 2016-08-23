@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1464000112">
+  <File Type="OPT-DCP" Name="TopSimple_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TopSimple_postroute_physopt.dcp"/>
+  <File Type="PA-DCP" Name="TopSimple.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="ROUTE-DCP" Name="TopSimple_routed.dcp"/>
+  <File Type="PA-TCL" Name="TopSimple.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="TopSimple_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="TopSimple_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="TopSimple.hwdef"/>
+  <File Type="OPT-TIMING" Name="TopSimple_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="TopSimple_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="TopSimple_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="TopSimple_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="TopSimple_placed.dcp"/>
+  <File Type="PLACE-IO" Name="TopSimple_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="TopSimple_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TopSimple_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TopSimple_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TopSimple_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="TopSimple_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TopSimple_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="TopSimple_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TopSimple_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="TopSimple_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="TopSimple_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="TopSimple.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="TopSimple_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="TopSimple_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="TopSimple_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TopSimple_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="TopSimple_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="TopSimple_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="TopSimple_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TopSimple_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TopSimple_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TopSimple_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TopSimple_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="TopSimple_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="TopSimple_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TopSimple_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TopSimple_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TopSimple_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="TopSimple.bit"/>
+  <File Type="BG-BIN" Name="TopSimple.bin"/>
+  <File Type="BITSTR-MSK" Name="TopSimple.msk"/>
+  <File Type="BITSTR-RBT" Name="TopSimple.rbt"/>
+  <File Type="BITSTR-NKY" Name="TopSimple.nky"/>
+  <File Type="BITSTR-BMM" Name="TopSimple_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="TopSimple.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="TopSimple.sysdef"/>
+  <File Type="BG-BGN" Name="TopSimple.bgn"/>
+  <File Type="BG-DRC" Name="TopSimple.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/TopSimple_AXILiteS_s_axi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/TopSimple.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="TopSimple"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/TopSimple.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

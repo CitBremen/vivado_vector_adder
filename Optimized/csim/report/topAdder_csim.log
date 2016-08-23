@@ -1,0 +1,71 @@
+   Compiling ../../../adder_tc.cpp in debug mode
+   Compiling ../../../adder.cpp in debug mode
+   Generating csim.exe
+
+
+
+
+ input2(-1,1)
+
+ input1(0,0)
+output(0,0)
+
+ input1(0,0)
+output(-1,1)
+
+ input1(0,0)
+output(-1,1)
+
+ input1(0,0)
+output(-1,1)
+
+ input1(0,0)
+output(-1,1)
+outside the loop (-1,1)
+
+ input2(-2,2)
+
+ input1(0,0)
+output(0,0)
+
+ input1(0,0)
+output(-2,2)
+
+ input1(0,0)
+output(-2,2)
+
+ input1(0,0)
+output(-2,2)
+
+ input1(0,0)
+output(-2,2)
+outside the loop (-2,2)
+
+ input2(-3,3)
+
+ input1(0,0)
+output(0,0)
+
+ input1(0,0)
+output(-3,3)
+
+ input1(0,0)
+output(-3,3)
+
+ input1(0,0)
+output(-3,3)
+
+ input1(0,0)
+output(-3,3)
+outside the loop (-3,3)
+
+ output Calculated by software are following 
+(-1,1)
+(-2,2)
+(-3,3)
+
+ output calculated by HW
+outputA[0](-1,1)
+outputA[1](-2,2)
+outputA[2](-3,3)
+@I [SIM-1] CSim done with 0 errors.

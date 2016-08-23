@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Jun 10 00:12:34 2016
+# Process ID: 11648
+# Current directory: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/impl/vhdl/project.runs/impl_1
+# Command line: vivado.exe -log complex2DAdder.vdi -applog -messageDb vivado.pb -mode batch -source complex2DAdder.tcl -notrace
+# Log file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/impl/vhdl/project.runs/impl_1/complex2DAdder.vdi
+# Journal file: C:/Users/engrm_000/OneDrive/vivado_HLS/complexAdder/complex2DAdder/impl/vhdl/project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source complex2DAdder.tcl -notrace

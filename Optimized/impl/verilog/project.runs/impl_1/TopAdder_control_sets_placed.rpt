@@ -1,0 +1,68 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Sat May 21 15:44:54 2016
+| Host         : Abbas running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopAdder_control_sets_placed.rpt
+| Design       : TopAdder
+| Device       : xc7z020
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    15 |
+| Minimum Number of register sites lost to control set restrictions |    24 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             482 |          138 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              68 |           24 |
+| Yes          | No                    | No                     |             397 |          146 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              29 |           14 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+-----------------------------------------+------------------------------------------------+------------------+----------------+
+| Clock Signal |              Enable Signal              |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++--------------+-----------------------------------------+------------------------------------------------+------------------+----------------+
+|  ap_clk      | input1_M_real_ce0321_in                 | TopAdder_AXILiteS_s_axi_U/SR[0]                |                1 |              2 |
+|  ap_clk      | TopAdder_AXILiteS_s_axi_U/rdata1        |                                                |                4 |              5 |
+|  ap_clk      |                                         | TopAdder_AXILiteS_s_axi_U/rdata_reg[31]_i_24_0 |                4 |              6 |
+|  ap_clk      | TopAdder_AXILiteS_s_axi_U/aw_hs         |                                                |                2 |              8 |
+|  ap_clk      | TopAdder_AXILiteS_s_axi_U/rdata1        | TopAdder_AXILiteS_s_axi_U/rdata[31]_i_1_n_0    |               13 |             27 |
+|  ap_clk      | rdata_reg[31]_i_10_n_0                  |                                                |               14 |             32 |
+|  ap_clk      | rdata_reg[31]_i_11_n_0                  |                                                |                9 |             32 |
+|  ap_clk      | rdata_reg[31]_i_13_n_0                  |                                                |               10 |             32 |
+|  ap_clk      | rdata_reg[31]_i_17_n_0                  |                                                |               16 |             32 |
+|  ap_clk      | rdata_reg[31]_i_19_n_0                  |                                                |               17 |             32 |
+|  ap_clk      | rdata_reg[31]_i_24_n_0                  |                                                |                9 |             32 |
+|  ap_clk      |                                         | TopAdder_AXILiteS_s_axi_U/ap_rst_n_inv         |               20 |             62 |
+|  ap_clk      | reg_158[31]_i_1_n_0                     |                                                |               24 |             64 |
+|  ap_clk      | p_x_M_real_load_reg_262_reg[31]_i_2_n_0 |                                                |               41 |            128 |
+|  ap_clk      |                                         |                                                |              138 |            482 |
++--------------+-----------------------------------------+------------------------------------------------+------------------+----------------+
+
+
