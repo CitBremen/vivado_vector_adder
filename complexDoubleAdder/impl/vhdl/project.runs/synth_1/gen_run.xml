@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1464803705">
+  <File Type="RDS-DCP" Name="complexDoubleAdder.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="complexDoubleAdder_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="complexDoubleAdder_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="complexDoubleAdder.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="RDS-RDS" Name="complexDoubleAdder.vds"/>
+  <File Type="RDS-UTIL" Name="complexDoubleAdder_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="complexDoubleAdder_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="complexDoubleAdder_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/complexDoubleAdder_ap_dadd_3_full_dsp_64/complexDoubleAdder_ap_dadd_3_full_dsp_64.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/complexDoubleAdder_AXILiteS_s_axi.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/complexDoubleAdder_dadd_64ns_64ns_64_5_full_dsp.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/complexDoubleAdder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="complexDoubleAdder"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/complexDoubleAdder.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design">
+      <Option Id="MoreOptsStr"><![CDATA[-no_iobuf -mode out_of_context]]></Option>
+    </Step>
+  </Strategy>
+</GenRun>
